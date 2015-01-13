@@ -20,14 +20,14 @@ Lucene使用[Inverted index](http://en.wikipedia.org/wiki/Inverted_index)来存�
 
 |Term|Count|Docuemnt|
 |----|-----|--------|
-|1.0|1|<1>|
-|4|1|<3>|
-|Apache|1|<3>|
-|Cookbook|1|<3>|
-|Elasticsearch|2|<1>.<2>|
-|Mastering|1|<2>|
-|Server|1|<1>
-|Solr|1|<3>|
+|1.0|1|\<1\>|
+|4|1|\<3\>|
+|Apache|1|\<3\>|
+|Cookbook|1|\<3\>|
+|Elasticsearch|2|\<1\>.\<2\>|
+|Mastering|1|\<2\>|
+|Server|1|\<1\>|
+|Solr|1|\<3\>|
 
 在上面的例子中，我们首先将文档切分成一个一个term，也就是用空格分割，然后映射表里面记录该term总的出现次数以及在哪个document里面。
 
