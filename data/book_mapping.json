@@ -1,0 +1,24 @@
+{
+    "book" : 
+    {
+        "_index" : {
+            "enabled" : true
+        },
+        
+        "_id" : {
+            "index": "not_analyzed",
+            "store" : "yes"
+        },
+       
+        "properties" : {
+            "author" : { "type" : "string"},
+            "characters" : {"type" : "string"},
+            "copies" : {"type" : "long","ignore_malformed":false},
+            "otitle" : {"type" : "string"},
+            "tags" : {"type" : "string"},
+            "title" : {"type" : "string"},
+            "year" : {"type" : "long","ignore_malformed":false, "index" : "analyzed"},
+            "available" : {"type" : "boolean"}
+        } 
+    }
+}
