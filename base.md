@@ -54,11 +54,15 @@ Lucene使用**[TF/IDF](http://en.wikipedia.org/wiki/Tf–idf)**这套计算得�
 
 Data:
 
-+ Index：Elasticsearch用来存储数据的逻辑区域，它类似于关系型数据库中的table概念。一个index可以在一个或者多个shard上面，同时一个shard也可能会有多个replicas。
++ Index：Elasticsearch用来存储数据的逻辑区域，它类似于关系型数据库中的database 概念。一个index可以在一个或者多个shard上面，同时一个shard也可能会有多个replicas。
 + Document：Elasticsearch里面存储的实体数据，类似于关系数据中一个table里面的一行数据。
 document由多个field组成，不同的document里面同名的field一定具有相同的类型。document里面field可以重复出现，也就是一个field会有多个值，即multivalued。
-+ Document type：为了查询需要，一个index可能会有多种document，也就是document type，但需要注意，不同document里面同名的field一定要是相同类型的。
-+ Mapping：存储field的相关映射信息，不同document type会有不同的mapping。
++ Document type：为了查询需要，一个index可能会有多种document，也就是document type. 它类似于关系型数据库中的 table 概念。但需要注意，不同document里面同名的field一定要是相同类型的。
++ Mapping：它类似于关系型数据库中的 schema 定义概念。存储field的相关映射信息，不同document type会有不同的mapping。
+
+下图是 ElasticSearch 和 关系型数据库的一些术语比较。
+
+![](./data/comparison.png)
 
 Server:
 
@@ -67,4 +71,5 @@ Server:
 + Shard：数据分片，一个index可能会有多个shards，不同shards可能在不同nodes
 + Replica：shard的备份，有一个primary shard，其余的叫做replica shards
 + Gateway：管理cluster状态信息
+
 
