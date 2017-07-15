@@ -48,7 +48,7 @@ Analysis通过analyzer实现，主要包括tokenizer，token filters以及charac
 
 Score: 用来表示一个document跟查询语句的匹配程度，score越高，表明越匹配。
 
-Lucene使用**[TF/IDF](http://en.wikipedia.org/wiki/Tf–idf)**这套计算得分算法。
+Lucene使用[**TF/IDF**](http://en.wikipedia.org/wiki/Tf–idf)这套计算得分算法。
 
 ## Elasticsearch基本概念
 
